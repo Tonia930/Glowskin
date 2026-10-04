@@ -1,0 +1,111 @@
+.hero{
+    padding:130px 0;
+    position: relative;
+    background-image: url("../images/glowskin-produt2.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:450px;
+}
+
+.hero-content{
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    gap:5px;
+    align-items: center;
+    min-height: 450;
+}
+
+.hero-text{
+    flex: 1;
+    width: 45%;
+    padding-left: 90px;
+    max-width: 500px;
+    position: relative;
+    z-index:2 ;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(246, 232, 213, 0.85) 0%,
+        rgba(246, 232, 213, 0.55) 30%,
+        rgba(246, 232, 213, 0) 55%
+    );
+}
+
+.hero-label{
+    display:flex;
+    align-items:center ;
+    gap:15px ;
+    margin-bottom: 14px;
+}
+
+.label-text{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #4f8a61;
+}
+
+.label-line{
+    width: 80px;
+    height: 1px;
+    background-color: #4f8a61;
+}
+
+.hero-text h1{
+    font-size: 52px;
+    line-height: 1.1;
+    color: #4f8a61;
+    margin-bottom: 24px;
+}
+
+.hero-text p{
+    font-size: 17px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 28px;
+}
+/*shop now btn*/
+.hero-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #4f8a61;
+    color: #ffffff;
+
+    padding: 13px 24px;
+    border-radius:25px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover{
+    transform: translatex(-3px);
+}
+/*shop now end*/
+
+
+.hero-image{
+    flex: 1;
+    display: flex;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width:900px;
+    display: block;
+}
+
